@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--
+LANOY Anne, MERCENT Valentine, MUNIER Elsa
+MIN2 - Projet Web Design
+01/05/2022
+-->
+<html>
+    <!-- La balise HEAD contient tous les éléments qui concerne la page-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>CV - Anne Lanoy</title>  <!-- Titre qui s'affiche dans la barre -->
+        <link rel="icon" type="image/x-icon" href="assets/img/EPF.png" /> <!-- On ajoute une image, le logo de l'epf -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />  <!-- Lien vers le document css, qui contient toutes les informations de style  -->
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!-- Contient la navigation à droite qui renvoie au différence section du cv-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <!-- Bouton retour menu-->
+            <div>
+                <!-- Renvoi vers le menu-->
+                <a class="boutonretour text-white" href="../Menu/Menu.html">Menu</a>
+            </div>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Anne Lanoy</span>
+                <!-- J'ajoute une image pour ma photo de profil qui se trouve à droite dans le menu-->
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <!--Ajout d'une barre de navigation-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- ul correspond à une liste -->
+                <ul class="navbar-nav">
+                    <!-- Pour chacun des éléments suivants, on cherche dans le code html l'id href, et quand on clique dessus, la page html nous renvoie dessus-->
+                    <!--Dès quon se trouve sur une section, la section dans laquelle on se trouve se met en gras-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Profil</a></li> 
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiences Profesionnelles</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Centres d'intérêts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content: contient le reste du cv qui s'affiche à droite de la page-->
+        <div class="container-fluid p-0">
+            <!-- About, je créé une section qui contiendra qu'une seule division mais plusieurs sous-divisions-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        <!-- j'ajoute mon prénom et le nom avec une couleur différente -->
+                        Anne
+                        <span class="text-primary">Lanoy</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        9 avenue Maurice Derché · Cannes, 06 400 · 06 03 69 88 33 ·
+                        <!--Le lien de l'adresse mail est rendu cliquable pour pouvoir envoyer une mail quand on clique dessus-->
+                        <a href="mailto:name@email.com">anne.lanoy@epfedu.fr</a>  · 
+                        <!--La photo ajoutée signifie que j'ai le permisB, elle est ajouté à la suite des informations générales-->
+                        <img class = "tabulation" src="assets/img/voiture.png" alt="..." width ='32' height = '32'/>
+
+                    </div>
+                    <!--Petit paragraphe pour expliquer ou je suis actuellement-->
+                    <p class="lead mb-5">Je suis actuellement en Master 1 à l'EPF, une école d'ingénieure généraliste. Je suis spécialisée dans le numérique </p>
+                    <!--Ajout d'un saut de ligne-->
+                    <br>
+                    <div class="social-icons">  <!-- Affiche des icones cliquables, qui renvoient vers les liens associés -->
+                        <a class="social-icon" href="https://fr.linkedin.com/in/anne-lanoy-740aa9201?trk=people-guest_people_search-card"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience, je créé une section qui ne contiendra qu'une seule division mais des sous-divisions-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <!--Le titre 2 est un titre important, il sera mis en avant sur la page -->
+                    <h2 class="mb-5">Experiences Profesionnelles</h2>
+                    <!-- Je créé une division pour chaque experience profesionnelle que j'ai pu avoir-->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!--Titre-->
+                            <h3 class="mb-0">Stage élève ingénieure : développement en C#.NET</h3>
+                            <!--je mets en gras le lieu et la ville-->
+                            <div class="subheading mb-3">Thales DMS, Sophia-Antipolis</div>
+                            <!--Deux paragraphes pour décrire ce que j'ai fais-->
+                            <p>Intégration d'une reconnaissance vocale (C++, VSDK) et d'un Eye Tracker Tobii (C#) sur une IHM pour assister les opérateurs sonar</p>
+                            <p>Développement en autonomie d'un simulateur, d'une IHM sur Unity en C#.NET, du manuel utilisateur et de la documentation associée</p>
+                        </div>
+                        <!--Permet d'écrire la date à droite du titre du stage-->
+                        <div class="flex-shrink-0"><span class="text-primary">Juillet - Decembre 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!--Titre-->
+                            <h3 class="mb-0">Stage d'engagement citoyen dans un refuge animalier</h3>
+                            <!--je mets en gras le lieu et la ville-->
+                            <div class="subheading mb-3">L'Arche des animaux, Montpellier</div>
+                            <!--Paragraphe pour expliquer ce que j'ai fait-->
+                            <p>Nettoyer les enclos, accueillir les familles, s'occuper de l'entretien du refuge</p>
+                        </div>
+                        <!--Permet d'écrire la date à droite du titre du stage-->
+                        <div class="flex-shrink-0"><span class="text-primary">Juillet - Aout 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!--Titre-->
+                            <h3 class="mb-0">Stage ouvrier dans un magasin de bricolage</h3>
+                            <!--je mets en gras le lieu et la ville-->
+                            <div class="subheading mb-3">Bricorama, Cannes</div>
+                            <!--Paragraphe pour expliquer ce que j'ai fait-->
+                            <p>Servir les clients, en charge de la réception et de la préparation des commandes, organiser les rayons</p>
+                        </div>
+                        <!--Permet d'écrire la date à droite du titre du stage-->
+                        <div class="flex-shrink-0"><span class="text-primary">Juin - Juillet 2019</span></div>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Formations, je créé une section qui contiendra qu'une seule division mais des sous-divisions-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Formations</h2>
+                    <!--Pour chaque formation je créé une division  avec des sous-divisions-->
+                    <!--Division pour expliquer ma formation à l'EPF-->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Ecole d'ingénieurs EPF</h3>
+                            <div class="subheading mb-3">Cachan, Spécialisation informatique et numérique</div>
+                            <div>Modules étudiés :</div>
+                            <p>Statistiques, JAVA, Android Studio, management de projet, Git</p>
+                            <div>Projets :</div>
+                            <p>Développement d'un jeu en JAVA, conception d'un drône sur Catia et Arduino, Dévelppement d'une application de réservations de voiture en JAVA (Maven, Spring, JSP, Servlet, git)</p>
+                        </div>
+                        <!--Permet d'écrire la date à droite du titre-->
+                        <div class="flex-shrink-0"><span class="text-primary">Septembre 2018 - Aujourd'hui</span></div>
+                    </div>
+                    <!--Division pour dire quand j'ai passé le bac-->
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Baccalauréat scientifique</h3>
+                            <p> Cannes </p>
+                        </div>
+                        <!--Permet d'écrire la date à droite du titre-->
+                        <div class="flex-shrink-0"><span class="text-primary">2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills, je créé une section qui contient qu'une seule division mais plusieurs sous-divisions-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Compétences</h2>
+                    <div class="subheading mb-3">Langages de programmation</div>
+                    <!-- Je crée une liste dans laquelle je mets des images pour chaque langage -->
+                    <ul class="list-inline dev-icons">
+                        <!-- Je force la taille des images à 55x55 pour qu'elles aient toute la même taille -->
+                        <li class="list-inline-item"><img src="assets/img/csharp.jpg" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/java.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/Html5.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/JavaScript.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/Matlab.png" alt="..." width ='55' height = '55'/></li>
+
+                    </ul>
+
+                    <div class="subheading mb-3">Logiciels</div>
+                    <!-- Je crée une liste dans laquelle je mets des images pour chaque logiciel -->
+                    <ul class="list-inline dev-icons">
+                        <!-- Je force la taille des images à 55x55 pour qu'elles aient toute la même taille et garder ainsi une homogénéité -->
+                        <li class="list-inline-item"><img src="assets/img/catia.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/unity.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/GIT.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/Word.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/PPT.png" alt="..." width ='55' height = '55'/></li>
+                        <li class="list-inline-item"><img src="assets/img/Excel.png" alt="..." width ='55' height = '55'/></li>
+
+                    </ul>
+                    <div class="subheading mb-3">Langues</div>
+                    <!--Liste qui contient les langues parlées-->
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Français (langue maternelle)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Anglais (C1)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Allemand (B1)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests, je créé une section qui ne contiendra qu'une seule division mais plusieurs sous-division-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <!--Titre de la section-->
+                    <h2 class="mb-5">Centre d'intérêts</h2>
+                    <div class="subheading mb-3">Association étudiante</div>
+                    <!--Liste qui explique ce que j'ai fais dans l'asso-->
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"></span>
+                            Membre et responsable de 5 membres du BDI en 2021 (association de l'EPF accueillant les étudiants étrangers)
+                        </li>
+                        <li>
+                            <span class="fa-li"></span>
+                            Organisation d'évènements pour 300 étudiants
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Loisirs et sports</div>
+                    <!--Liste qui contient mes sports et loisirs-->
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"></span>
+                            Danse classique (12 ans)
+                        </li>
+                        <li>
+                            <span class="fa-li"></span>
+                            Equitation (10 ans)
+                        </li>
+                        <li>
+                            <span class="fa-li"></span>
+                            Natation
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <hr class="m-0" />            
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

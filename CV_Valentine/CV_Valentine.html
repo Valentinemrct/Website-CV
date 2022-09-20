@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+LANOY Anne, MERCENT Valentine, MUNIER Elsa
+MIN2 - Projet Web Design
+01/05/2022
+-->
+<html lang="fr"><!--configuration de la langue-->
+    <head>
+        <meta charset="utf-8" /><!--encodage de la page-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!--format d'affichage qui s'adapte au device-->
+        <title>CV - Valentine Mercent</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <!--permet de reconnaître les icônes qu'on va utiliser par la suite-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)  -->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Différentes parties du CV-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"><!--représente une section de page et permet de rediriger vres d'autres sections de page-->
+            <!-- Bouton retour menu-->
+            <div>
+                <!-- Renvoi vers le menu-->
+                <a class="boutonretour text-white" href="../Menu/Menu.html">Menu</a>
+            </div>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><!--crée un lien hypertext-->
+                <span class="d-block d-lg-none">Valentine Mercent</span><!--conteneur permettant d'introduire le texte "Valentine Mercent"-->
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/valphoto.jpeg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav"><!--indique que la liste est non ordonnée-->
+                    <!--pour les éléments cités ci-dessous on cherche href dans le code pour rediriger vers l'élément en question-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Profil</a></li><!--élément d'une liste-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expériences Professionelles</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Centres d'intérêts</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#langues">Langues</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Diplômes</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Contenu de la page-->
+        <div class="container-fluid p-0">
+            <!-- Détails du profil-->
+            <section class="resume-section" id="about"><!--faire bien attention à associer un identifiant unique à la section-->
+                <div class="resume-section-content">
+                    <h1 class="mb-0"><!--définit le margin bottom (espace)-->
+                        Valentine
+                        <span class="text-primary">Mercent</span>
+                    </h1>
+                    <div class="subheading mb-5"><!-- mb influence l'espace entre les éléments et sunheading influe sur la police du texte-->
+                        2 rue Nicolas Appert, 75011 · 0684009141·
+                        <a href="mailto:valentine.mercent@epfedu.fr">valentine.mercent@epfedu.fr</a>
+                    </div>
+                    <p class="lead mb-5">Étudiante en Majeure Ingénierie Numérique au sein de l'école d'ingénieurs EPF-Cachan, et je souhaiterais travailler dans le domaine de la cybersécurité.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href ="https://www.linkedin.com/in/valentine-mercent-32aa83196"><i class="fab fa-linkedin-in"></i></a><!--icônes des marques-->
+                        <a class="social-icon" href="https://github.com/Valentinemrct"><i class="fab fa-github"></i></a><!--marque la différence par rapport au reste du texte-->
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Expérience professionelle-->
+            <section class="resume-section" id="experience"><!--faire bien attention à associer un identifiant unique à la section-->
+                <div class="resume-section-content"><!--première de la section expérience professionnelle-->
+                    <h2 class="mb-5">Expériences Professionelles</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5"><!--permet de faire en sorte que l'élément soit flexible par exemple en modifiant ses dimensions-->
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stage Élève Ingénieur</h3>
+                            <div class="subheading mb-3">Assistante Chef de projet-RATP Group</div>
+                            <p>Mise en place de la stratégie globale de la conduite
+                                du changement concernant un programme collaborateur</p>
+                            <p>Participation aux démarches de veille technologique
+                                et fonctionnelle</p>
+                            <p>Participation à la conduite de projets (planning, budget,
+                                cahier des charges, cartographies fonctionnelles)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021 - 4,5 mois</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stage Engagement Citoyen</h3>
+                            <div class="subheading mb-3">Bénévole-Les Restos du Coeur</div>
+                            <p>Aide à la réinsertion sociale (initiation à l'informatique)</p>
+                            <p>Soutien à la recherche de logement, aide alimentaire et
+                                vestimentaire</p>
+
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021 - 2 mois</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stage animateur colonie de vacances</h3>
+                            <div class="subheading mb-3">Les Enfants du métro</div>
+                            <p>Conception d’activités éducatives pour enfants en situation de
+                                handicap.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stage</h3>
+                            <div class="subheading mb-3">Pitié Salpêtrière (APHP)</div>
+                            <p>Traitement et
+                                observation de greffes autologues et allogéniques.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2016</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" /><!--hr changement thématique entre des éléments de paragraphe-->
+            <!-- Formation-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Formations</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">EPF-Cachan</h3>
+                            <div class="subheading mb-3">École d'ingénieurs, Majeure Numérique</div>
+                            <div></div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Septembre 2020 - Juin 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Institution Sainte-Marie</h3>
+                            <div class="subheading mb-3">Classes Préparatoires (PC)</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Septembre 2018 - Juin 2020</span></div>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <h3 class="mb-6">Projets Académiques</h3>
+                    <div class="flex-grow-1"> 
+                        <h4 class="mb-0">Création d’un Tracking Colis (Arduino)</h4>
+                        <div class="subheading mb-3">Repérer
+                            conditions de transport d’un colis (chute, température,
+                            inclinaisons)</div>
+
+                        <h4 class="mb-0">Modélisation d'une Clinique Médicale (VBA, SQL)</h4>
+                        <div class="subheading mb-3">Création d'une Base de données rescensant les entrées/sorties stock de médicaments/médicaments/patients, planning de garde. </div>
+
+                        <h4 class="mb-0">Modélisation de moteurs hydrauliques (Catia et Amesim)</h4>
+                        <div class="subheading mb-3">Simulation dans le but de prédire les performances et optimiser le foncitonnement des moteurs.</div>
+
+                        <h4 class="mb-0">TIPE</h4>
+                        <div class="subheading mb-3">Étude et optimisation d’une colonne d’eau oscillante
+                            au LHEEA (CNRS)</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Compétences-->             
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Compétences</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!-- <div class="subheading mb-3">Langages de programmation et outils</div> -->
+                            <h3 class="mb-0">Langages de programmation et outils</h3>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                                <li class="list-inline-item"><i class="fa-brands fa-java"></i></li>
+                                <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                                <li class="list-inline-item"><i class="fa-brands fa-microsoft"></i></li>
+                            </ul>
+                            <div class="subheading mb-3">Soft Skills</div>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Travail en équipe
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Communication
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Capacité d'adaptation
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Autonomie
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Associatif-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Centres d'intérêts</h2>
+                    <h3 class="mb-0">Associations</h3>
+                    <p>Les Jeunes IHEDN Membre du Comité Cyber</p>
+                    <p>Gestion du pôle sponsor de l’Association « Muzikos »</p>
+                    <h3 class="mb-0">Sports</h3>
+                    <p>Judo (ceinture marron), Natation, Ski</p>
+                    <h3 class="mb-0">Scoutisme</h3>
+                    <p>Jeannette, Guide, Cheftaine</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Langues-->
+            <section class="resume-section" id="langues">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Langues</h2>
+                    <h3 class="mb-0">Français(courant)</h3>
+                    <h3 class="mb-0">Anglais(B2)</h3>
+                    <h3 class="mb-0">Espagnol(B1)</h3>
+                    <h3 class="mb-0">Langue des Signes Française (Notions)</h3>
+
+                </div>
+            </section>
+
+            <!-- Diplômes-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Diplômes</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><!--affiche une icône trophé à côté du texte-->
+                            Baccaléaurat Scientifique (Bien)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            BAFA(spécialité handicap)
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

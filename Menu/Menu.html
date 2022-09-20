@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+LANOY Anne, MERCENT Valentine, MUNIER Elsa
+MIN2 - Projet Web Design
+01/05/2022
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Page d'Accueil</title> <!-- Titre de la page -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" /> <!-- Logo de l'epf pour l'icone de la page -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Lien avec le fichier css-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <!-- Barre du menu -->
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Liste des 3 CV qui renvoient vers les CV -->
+                        <li class="nav-item"><a class="nav-link" href="../CV_Anne/CV_Anne.html">Anne Lanoy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../CV_Valentine/CV_Valentine.html">Valentine Mercent</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../CV_Elsa/CV_Elsa.html">Elsa Munier</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <!-- Présentation du projet -->
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <!--  Titre du projet -->
+                    <h1 class="masthead-heading mb-0">Equipe de projet</h1>
+                    <h2 class="masthead-subheading mb-0">Projet Web Design EPF</h2>
+                    <!-- Bouton pour accéder aux membres du groupe -->
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Voir les membres</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <!-- Premier membre -->
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- Division pour insérer l'image -->
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="..." height="300" width="300"/></div>
+                    </div>
+                    <!-- Division pour insérer le texte -->
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <!-- Nom et prénom -->
+                            <h2 class="display-4">Anne Lanoy</h2>
+                            <!-- Adresse mail -->
+                            <a href="mailto:anne.lanoy@epfedu.fr">anne.lanoy@epfedu.fr</a>
+                            <!-- Formation actuelle -->
+                            <p>Etudiante en M1 à l'EPF(école d'ingénieur)<br>Majeure Numérique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <!-- Deuxième membre -->
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- Division pour insérer l'image -->
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpeg" alt="..." height="300" width="300"/></div>
+                    </div>
+                    <!-- Division pour insérer le texte -->
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <!-- Nom et prénom -->
+                            <h2 class="display-4">Valentine Mercent</h2>
+                            <!-- Adresse mail -->
+                            <a href="mailto:valentine.mercent@epfedu.fr">valentine.mercent@epfedu.fr</a>
+                            <!-- Adresse mail -->
+                            <p>Etudiante en M1 à l'EPF(école d'ingénieur)<br>Majeure Numérique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <!-- Troisième membre -->
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- Division pour insérer l'image -->
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." height="300" width="300"/></div>
+                    </div>
+                    <!-- Division pour insérer le texte -->
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <!-- Nom et prénom -->
+                            <h2 class="display-4">Elsa Munier</h2>
+                            <!-- Adresse mail -->
+                            <a href="mailto:elsa.munier@epfedu.fr">elsa.munier@epfedu.fr</a>
+                            <!-- Adresse mail -->
+                            <p>Etudiante en M1 à l'EPF(école d'ingénieur)<br>Majeure Numérique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <!-- Division pour le bas de page -->
+            <div class="container px-5"><p class="m-0 text-center text-white small">Projet Web Design EPF - 2022</p></div>
+        </footer>
+        <!-- Core theme JS-->
+        <!-- Lien avec le fichier javascript -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
